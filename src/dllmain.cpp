@@ -721,6 +721,7 @@ DWORD __stdcall Main(void*)
 {
     Logging();
     Configuration();
+    IntroSkip();
     Resolution();
     AspectRatio();
     FOV();
