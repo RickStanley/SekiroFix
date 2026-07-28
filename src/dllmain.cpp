@@ -568,7 +568,7 @@ void IntroSkip()
     }
     else
     {
-        // Attempt to restore original JE if currently patched, user toggles off.
+        // Attempt to restore original JE if currently patched, if the user toggles it off again.
         constexpr uintptr_t introskip_offset = 0xE1B51B;
         auto addr = reinterpret_cast<std::uint8_t*>(exeModule) + introskip_offset;
         std::uint8_t current = 0;
